@@ -13,3 +13,101 @@ html,body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.container{
+    width: 400px;
+    margin: 10vh auto 0 auto;
+    border: 24px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color:#2f3541; 
+}
+.display{
+    height: 130px;
+    background-color: #2f3541;
+    display: flex;
+}
+.buttons{
+    background-color:#2f3541;
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(24,32,42,255);
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.button{
+    background-color: #333b48;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 23px;
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}
+.button:hover{
+    background-color: rgba(51,59,72,255);
+    transition: background-color 0.3s color ;
+}
+img{
+    height: 25px;
+    width: 25px;
+}
+.button-orange{
+    background-color: orange;
+    transition: scale 0.3s;
+}
+.button-orange:hover{
+    background-color: orange;
+    scale: 1.1;
+}
+.button-lightgray{
+    background-color: #4a5664;
+    transition: scale 0.3s;
+}
+.button-lightgray:hover{
+    background-color: #4a5664;
+    scale:1.1;
+}
+.input{
+    width: calc(100% - 32px);
+    padding: 0;
+    border: unset;
+    margin: 16px;
+    height: 114px;
+    font-size: 80px;
+    background-color: transparent;
+    outline: unset;
+}
+#wyswietl{
+    text-align: center;
+    font-size: 150px;
+    width: 200px;
+    height: 130px;
+    color: black;
+}
+.dol{
+    background-color:#2f3541;
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(24,32,42,255);
+    padding-bottom: 50px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 0px;
+}
+.button-wiekszy{
+    width: 170px;
+}
+#ikonki{
+    display: none;
+}

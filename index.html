@@ -3,14 +3,60 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  sdf
+  <div class="container">
+    <div class="display">
+      <input type="text" class="input" id="input">
+      <div id="wyswietl"></div>
+    </div>
+    <div class="buttons">
+      <button type="button" class="button button-lightgray" id="AC">
+        <img src="icons/AC.svg">
+      </button>
+      <button type="button" class="button button-lightgray" id="plusminus">+/-</button>
+      <button type="button" class="button button-lightgray" id="operator">
+        <img src="icons/procent.svg" alt="procent">
+      </button>
+      <button type="button" class="button button-orange" value="/" id="operator">
+        <img src="icons/dzielenie.svg" alt="znaczek dzielenie">
+      </button>
+      <button type="button" class="button" value="7" id="liczba">7</button>
+      <button type="button" class="button" value="8" id="liczba">8</button>
+      <button type="button" class="button" value="9" id="liczba">9</button>
+      <button type="button" class="button button-orange" value="*" id="operator">
+        <img src="icons/mnozenie2.svg" alt="znaczek mnozenia">
+      </button>
+      <button type="button" class="button" value="4" id="liczba">4</button>
+      <button type="button" class="button" value="5" id="liczba">5</button>
+      <button type="button" class="button" value="6" id="liczba">6</button>
+      <button type="button" class="button button-orange" value="-" id="operator">
+        <img src="icons/minus.svg" alt="znaczek odejmowania">
+      </button>
+      <button type="button" class="button" value="1" id="liczba">1</button>
+      <button type="button" class="button" value="2" id="liczba">2</button>
+      <button type="button" class="button" value="3" id="liczba">3</button>
+      <button type="button" class="button button-orange" value="+" id="operator">
+        <img src="icons/plus.svg" alt="znaczek dodwania">
+      </button>
+    </div>
+    <div class="dol">
+      <button type="button" class="button button-wiekszy" value="0" id="liczba">0</button>
+      <button type="button" class="button" id="kropka">
+        <img src="icons/kropka.svg">
+      </button>
+      <button type="button" class="button button-orange" id="równasie">
+        <img src="icons/rownasie.svg" alt="znaczek równasie">
+      </button>
+      <div id="ikonki"><img src="icons/dzielenie.svg" alt="znaczek dzielenie"><img src="icons/kropka.svg"><img
+          src="icons/plus.svg" alt="znaczek dodwania"><img src="icons/minus.svg" alt="znaczek odejmowania"><img
+          src="icons/mnozenie2.svg" alt="znaczek mnozenia"></div>
+    </div>
+  </div>
   <script type="module" src="/main.js"></script>
 </body>
 
