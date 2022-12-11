@@ -1,12 +1,6 @@
 const input = document.getElementById("input")
-const jeden = document.getElementsByClassName('button-jeden')
 const liczba1 = document.getElementById("liczba1")
 const liczba = document.querySelectorAll("#liczba")
-const operator = document.querySelectorAll("#operator")
-const wyswietl = document.getElementById("wyswietl")
-const del = document.getElementById("del")
-const ac = document.getElementById("AC")
-const ikona = document.querySelectorAll("#ikonki")
 for (const element of liczba) {
     element.addEventListener('click', () => {
         input.value += element.value
@@ -14,15 +8,95 @@ for (const element of liczba) {
     })
     //  console.log(element)
 }
-for (const op of operator) {
-    op.addEventListener(`click`, () => {
-        for (const ik of Object.entries(ikona)) {
-            wyswietl.innerHTML = ik
-            console.log(ikona.value)
+const buttonsOperators = document.getElementsByClassName("operator")
+const percentIcon = document.getElementById("percent")
+const divisionIcon = document.getElementById("division")
+const multiplicationIcon = document.getElementById("multiplication")
+const minusIcon = document.getElementById("minus")
+const plusIcon = document.getElementById("plus")
+const equalIcon = document.getElementById("equal")
+
+for (const operator of buttonsOperators) {
+    operator.addEventListener(`click`, () => {
+        console.log(operator.id)
+        switch (operator.id) {
+            case "button-multiplication":
+                multiplicationIcon.style.display = "block"
+                percentIcon.style.display = "none"
+                divisionIcon.style.display = "none"
+                minusIcon.style.display = "none"
+                plusIcon.style.display = "none"
+                equalIcon.style.display = "none"
+                break;
+            case "button-minus":
+                multiplicationIcon.style.display = "none"
+                percentIcon.style.display = "none"
+                divisionIcon.style.display = "none"
+                minusIcon.style.display = "block"
+                plusIcon.style.display = "none"
+                equalIcon.style.display = "none"
+                break;
+            case "button-plus":
+                multiplicationIcon.style.display = "none"
+                percentIcon.style.display = "none"
+                divisionIcon.style.display = "none"
+                minusIcon.style.display = "none"
+                plusIcon.style.display = "block"
+                equalIcon.style.display = "none"
+                break;
+            case "button-division":
+                multiplicationIcon.style.display = "none"
+                percentIcon.style.display = "none"
+                divisionIcon.style.display = "block"
+                minusIcon.style.display = "none"
+                plusIcon.style.display = "none"
+                equalIcon.style.display = "none"
+                break;
+            case "button-equal":
+                multiplicationIcon.style.display = "none"
+                percentIcon.style.display = "none"
+                divisionIcon.style.display = "none"
+                minusIcon.style.display = "none"
+                plusIcon.style.display = "none"
+                equalIcon.style.display = "block"
+                break;
+            case "button-percent":
+                multiplicationIcon.style.display = "none"
+                percentIcon.style.display = "block"
+                divisionIcon.style.display = "none"
+                minusIcon.style.display = "none"
+                plusIcon.style.display = "none"
+                equalIcon.style.display = "none"
+                break;
+            default:
+                break;
         }
     })
 }
-ac.addEventListener(`click`, () => {
+const clearInputIcon = document.getElementById("AC")
+clearInputIcon.addEventListener(`click`, () => {
     input.value = ``
-    wyswietl.innerHTML = ``
+    multiplicationIcon.style.display = "none"
+    percentIcon.style.display = "none"
+    divisionIcon.style.display = "none"
+    minusIcon.style.display = "none"
+    plusIcon.style.display = "none"
+    equalIcon.style.display = "none"
+
+})
+const plusminusIcon = document.getElementById("plusminus")
+plusminusIcon.addEventListener(`click`, () => {
+    if (input.value.search("-") !== -1) {
+        input.value = input.value.substring(1)
+    } else {
+        input.value = `-${input.value}`
+    }
+})
+const dotIcon = document.getElementById("dot")
+dotIcon.addEventListener(`click`, () => {
+    if (!input.value) return
+    console.log(input.value.includes("."))
+    if (!input.value.includes(".")) {
+        input.value += "."
+    }
 })

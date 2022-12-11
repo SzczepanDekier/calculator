@@ -12,50 +12,65 @@
   <div class="container">
     <div class="display">
       <input type="text" class="input" id="input">
-      <div id="wyswietl"></div>
+      <div id="wyswietl">
+        <img id="percent" src="icons/procent.svg" class="input-icon" alt="procent">
+        <img id="division" src="icons/dzielenie.svg" class="input-icon" alt="znaczek dzielenie">
+        <img id="multiplication" src="icons/mnozenie2.svg" class="input-icon" alt="znaczek mnozenia">
+        <img id="minus" src="icons/minus.svg" class="input-icon" alt="znaczek odejmowania">
+        <img id="plus" src="icons/plus.svg" class="input-icon" alt="znaczek dodwania">
+        <img id="equal" src="icons/rownasie.svg" class="input-icon" alt="znaczek równasie">
+      </div>
     </div>
-    <div class="buttons">
-      <button type="button" class="button button-lightgray" id="AC">
-        <img src="icons/AC.svg">
-      </button>
-      <button type="button" class="button button-lightgray" id="plusminus">+/-</button>
-      <button type="button" class="button button-lightgray" id="operator">
-        <img src="icons/procent.svg" alt="procent">
-      </button>
-      <button type="button" class="button button-orange" value="/" id="operator">
-        <img src="icons/dzielenie.svg" alt="znaczek dzielenie">
-      </button>
-      <button type="button" class="button" value="7" id="liczba">7</button>
-      <button type="button" class="button" value="8" id="liczba">8</button>
-      <button type="button" class="button" value="9" id="liczba">9</button>
-      <button type="button" class="button button-orange" value="*" id="operator">
-        <img src="icons/mnozenie2.svg" alt="znaczek mnozenia">
-      </button>
-      <button type="button" class="button" value="4" id="liczba">4</button>
-      <button type="button" class="button" value="5" id="liczba">5</button>
-      <button type="button" class="button" value="6" id="liczba">6</button>
-      <button type="button" class="button button-orange" value="-" id="operator">
-        <img src="icons/minus.svg" alt="znaczek odejmowania">
-      </button>
-      <button type="button" class="button" value="1" id="liczba">1</button>
-      <button type="button" class="button" value="2" id="liczba">2</button>
-      <button type="button" class="button" value="3" id="liczba">3</button>
-      <button type="button" class="button button-orange" value="+" id="operator">
-        <img src="icons/plus.svg" alt="znaczek dodwania">
-      </button>
+    <div class="container-row">
+      <div class="container-column">
+        <div class="container-column-buttons-top">
+          <button type="button" class="button button-lightgray" id="AC">
+            <img src="icons/AC.svg">
+          </button>
+          <button id="plusminus" type="button" class="button button-lightgray">+/-</button>
+          <button id="button-percent" type="button" class="button button-lightgray operator">
+            <img src="icons/procent.svg" alt="procent">
+          </button>
+        </div>
+        <div class="container-column-buttons-bottom">
+          <button type="button" class="button" value="7" id="liczba">7</button>
+          <button type="button" class="button" value="8" id="liczba">8</button>
+          <button type="button" class="button" value="9" id="liczba">9</button>
+          <button type="button" class="button" value="4" id="liczba">4</button>
+          <button type="button" class="button" value="5" id="liczba">5</button>
+          <button type="button" class="button" value="6" id="liczba">6</button>
+          <button type="button" class="button" value="1" id="liczba">1</button>
+          <button type="button" class="button" value="2" id="liczba">2</button>
+          <button type="button" class="button" value="3" id="liczba">3</button>
+          <button type="button" class="button button-wiekszy" value="0" id="liczba">0</button>
+          <button id="dot" type="button" class="button">
+            <img src="icons/kropka.svg">
+          </button>
+        </div>
+      </div>
+      <div class="container-row-right-buttons">
+        <button id="button-division" type="button" class="button button-orange operator" value="/">
+          <img src="icons/dzielenie.svg" alt="znaczek dzielenie">
+        </button>
+        <button id="button-multiplication" type="button" class="button button-orange operator" value="*">
+          <img src="icons/mnozenie2.svg" alt="znaczek mnozenia">
+        </button>
+        <button id="button-minus" type="button" class="button button-orange operator" value="-">
+          <img src="icons/minus.svg" alt="znaczek odejmowania">
+        </button>
+        <button id="button-plus" type="button" class="button button-orange operator" value="+">
+          <img src="icons/plus.svg" alt="znaczek dodwania">
+        </button>
+
+        <button id="button-equal" type="button" class="button button-orange operator">
+          <img src="icons/rownasie.svg" alt="znaczek równasie">
+        </button>
+      </div>
     </div>
-    <div class="dol">
-      <button type="button" class="button button-wiekszy" value="0" id="liczba">0</button>
-      <button type="button" class="button" id="kropka">
-        <img src="icons/kropka.svg">
-      </button>
-      <button type="button" class="button button-orange" id="równasie">
-        <img src="icons/rownasie.svg" alt="znaczek równasie">
-      </button>
-      <div id="ikonki"><img src="icons/dzielenie.svg" alt="znaczek dzielenie"><img src="icons/kropka.svg"><img
-          src="icons/plus.svg" alt="znaczek dodwania"><img src="icons/minus.svg" alt="znaczek odejmowania"><img
-          src="icons/mnozenie2.svg" alt="znaczek mnozenia"></div>
-    </div>
+
+
+
+
   </div>
   <script type="module" src="/main.js"></script>
 </body>
