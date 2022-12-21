@@ -1,7 +1,7 @@
 const input = document.getElementById("input")
 const liczba1 = document.getElementById("liczba1")
-const liczba = document.querySelectorAll("#liczba")
-for (const element of liczba) {
+const number = document.querySelectorAll("#liczba")
+for (const element of number) {
     element.addEventListener('click', () => {
         input.value += element.value
         //    console.log(input)
@@ -100,3 +100,5 @@ dotIcon.addEventListener(`click`, () => {
         input.value += "."
     }
 })
+
+
