@@ -102,12 +102,3 @@ dotIcon.addEventListener(`click`, () => {
 })
 
 
-const addNumber = (numbers) => {
-    input = input.toString() + numbers.toString()
-}
-number.foreach((numbers) => {
-    number.addEventListener(`click`, () => {
-        addNumber(numbers.innerText)
-        updateAction()
-    })
-})
