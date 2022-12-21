@@ -1,7 +1,7 @@
 const input = document.getElementById("input")
 const liczba1 = document.getElementById("liczba1")
-const liczba = document.querySelectorAll("#liczba")
-for (const element of liczba) {
+const number = document.querySelectorAll("#liczba")
+for (const element of number) {
     element.addEventListener('click', () => {
         input.value += element.value
         //    console.log(input)
@@ -99,4 +99,15 @@ dotIcon.addEventListener(`click`, () => {
     if (!input.value.includes(".")) {
         input.value += "."
     }
+})
+
+
+const addNumber = (numbers) => {
+    input = input.toString() + numbers.toString()
+}
+number.foreach((numbers) => {
+    number.addEventListener(`click`, () => {
+        addNumber(numbers.innerText)
+        updateAction()
+    })
 })
