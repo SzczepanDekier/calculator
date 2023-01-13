@@ -1,12 +1,13 @@
 const input = document.getElementById("input")
 const liczba1 = document.getElementById("liczba1")
 const number = document.querySelectorAll("#liczba")
+const previousAction = document.getElementsByClassName("previous-action")
 for (const element of number) {
     element.addEventListener('click', () => {
         input.value += element.value
         //    console.log(input)
     })
-    //  console.log(element)
+    //console.log(element)
 }
 const buttonsOperators = document.getElementsByClassName("operator")
 const percentIcon = document.getElementById("percent")
@@ -100,5 +101,6 @@ dotIcon.addEventListener(`click`, () => {
         input.value += "."
     }
 })
+
 
 

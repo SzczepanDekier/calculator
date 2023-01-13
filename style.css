@@ -96,6 +96,7 @@ img{
     height: 130px;
 }
 .input{
+    color: #ffffff;
     width: calc(100% - 32px);
     padding: 0;
     border: unset;
@@ -109,9 +110,7 @@ img{
     width: calc(100% - 32px);
     padding: 0;
     height: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 10px;
+    margin: 10px 16px 0px 16px;
     font-size: 40px;
 }
 #wyswietl{
